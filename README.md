@@ -68,7 +68,7 @@ Running the project requires zero build tools or complex package installationsâ€
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/<your-username>/tensorarcade.git
+git clone https://github.com/CoderOggy78/tensorarcade.git
 cd tensorarcade
 
 # 2. Run local HTTP server
