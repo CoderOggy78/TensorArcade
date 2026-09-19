@@ -1,4 +1,4 @@
-# ⚡ TensorArcade — The Definitive Machine Learning, GenAI & MLOps Roadmap Hub
+# TensorArcade — The Definitive Machine Learning, GenAI & MLOps Roadmap Hub
 
 > **From First-Principles Mathematics & Classical Algorithms to Autonomous Agentic AI, High-Throughput MLOps, and FAANG Applied Scientist System Design.**
 
