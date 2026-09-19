@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TensorArcade | The Definitive Machine Learning, GenAI & MLOps Roadmap Hub</title>
+  <meta name="description" content="Master Machine Learning from first principles math and classical algorithms to Transformers, Agentic AI, MLOps, and FAANG Applied Scientist system design. Inspired by retro arcade engineering aesthetics.">
+  <meta name="keywords" content="Machine Learning Roadmap, AI Resources, Deep Learning, Transformers, MLOps, FAANG MLE, Free AI Courses, Andrej Karpathy, MIT OCW, Stanford CS229">
+  <meta name="author" content="TensorArcade">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="TensorArcade | The Definitive ML & GenAI Roadmap Hub">
+  <meta property="og:description" content="A curated, gamified roadmap from first principles math to FAANG Applied Scientist production systems.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (Retro 8-bit lightning bolt) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%23F59E0B%22/><text y=%2270%22 font-size=%2265%22 x=%2222%22>⚡</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Custom Retro Arcade Cursor -->
+  <div id="arcade-cursor-dot" aria-hidden="true"></div>
+  <div id="arcade-cursor-ring" aria-hidden="true"></div>
+
+  <!-- Optional CRT Scanlines Effect -->
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <!-- STICKY TOP NAVBAR -->
+  <header class="arcade-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="TensorArcade Home">
+        <div class="brand-icon">⚡</div>
+        <div class="brand-text">
+          <span class="brand-title">TENSOR<span style="color: var(--arcade-amber);">ARCADE</span></span>
+          <span class="brand-subtitle">[ ML RESOURCE MATRIX ]</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+          <li><a href="#resources" class="nav-link">Resources</a></li>
+          <li><a href="#projects" class="nav-link">Project Quests</a></li>
+          <li><a href="#video-vault" class="nav-link">Video Vault</a></li>
+          <li><a href="#bookshelf" class="nav-link">Bookshelf</a></li>
+          <li><a href="#cheatsheets" class="nav-link">Formula Sheet</a></li>
+          <li><a href="#faang-playbook" class="nav-link">FAANG Playbook</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions: Theme, Audio & Search trigger -->
+      <div class="nav-actions">
+        <button id="sound-toggle-btn" class="icon-btn" title="Toggle 8-Bit Audio SFX" aria-label="Toggle Sound">🔊</button>
+        <button id="theme-toggle-btn" class="icon-btn" title="Toggle Theme" aria-label="Toggle Theme">🌙</button>
+        <a href="#roadmap" class="neo-btn neo-btn-sm neo-btn-primary" style="display: inline-flex;">Start Quest</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- GAMIFICATION & PROGRESS HUD BANNER -->
+  <aside class="hud-banner" aria-label="Player Progress HUD">
+    <div class="container hud-content">
+      <div class="hud-player">
+        <span class="led-indicator led-green" title="Systems Active"></span>
+        <span class="hud-level-badge" id="hud-level-badge">LVL 01</span>
+        <span class="hud-rank" id="hud-rank-text">Novice Hacker</span>
+      </div>
+
+      <div class="hud-progress-group">
+        <div class="hud-bar-outer" title="Progress Bar">
+          <div class="hud-bar-fill" id="hud-bar-fill"></div>
+        </div>
+        <div class="hud-stats" id="hud-stats-text">0/48 Milestones (0%) • 0 XP</div>
+      </div>
+
+      <div style="display: flex; gap: 0.5rem;">
+        <button id="export-progress-btn" class="neo-btn neo-btn-sm" title="Copy Notion-ready study plan">Export Plan 📋</button>
+        <button id="reset-progress-btn" class="neo-btn neo-btn-sm" style="opacity: 0.7;" title="Reset Progress">Reset ↺</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-wrapper">
+        <div class="hero-pill-badge">
+          <span class="led-indicator led-amber"></span>
+          <span>SYSTEM READY: 11-STAGE AI/ML ROADMAP HUB</span>
+        </div>
+
+        <h1 class="hero-title">
+          MASTER <span class="highlight-amber">MACHINE LEARNING</span> FROM FIRST PRINCIPLES TO <span class="highlight-green">FAANG PRODUCTION</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          An open-access curriculum and curated intelligence matrix spanning Matrix Calculus, Deep Neural Networks, Transformers, Agentic AI, MLOps, and FAANG Applied Scientist systems.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#roadmap" class="neo-btn neo-btn-primary">
+            <span>[INSERT COIN]</span> Explore Quest Tree ➔
+          </a>
+          <a href="#resources" class="neo-btn">
+            <span>🔍</span> Curated Resource Matrix
+          </a>
+          <a href="#faang-playbook" class="neo-btn neo-btn-blue">
+            <span>🏛️</span> FAANG MLE Blueprint
+          </a>
+        </div>
+
+        <!-- Retro Stats Ticker Row -->
+        <div class="hero-stats-row">
+          <div class="neo-box stat-card">
+            <span class="stat-card-number">11</span>
+            <span class="stat-card-label">Progressive Stages</span>
+          </div>
+          <div class="neo-box stat-card">
+            <span class="stat-card-number">140+</span>
+            <span class="stat-card-label">Curated Resources</span>
+          </div>
+          <div class="neo-box stat-card">
+            <span class="stat-card-number">60+</span>
+            <span class="stat-card-label">Video Masterclasses</span>
+          </div>
+          <div class="neo-box stat-card">
+            <span class="stat-card-number">20+</span>
+            <span class="stat-card-label">Free Canonical Books</span>
+          </div>
+          <div class="neo-box stat-card">
+            <span class="stat-card-number">100%</span>
+            <span class="stat-card-label">Free Open Knowledge</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: INTERACTIVE ROADMAP QUEST TREE -->
+    <section class="container" id="roadmap" style="padding-top: 4.5rem; padding-bottom: 4.5rem;">
+      <div class="section-header">
+        <span class="section-tag">[ CORE QUEST TREE ]</span>
+        <h2 class="section-heading">11-STAGE CURRICULUM ROADMAP</h2>
+        <p class="section-desc">
+          Follow the stages linearly or conquer modules simultaneously. Each milestone is clickable—check items off to earn XP, level up your rank, and monitor your personal learning trajectory.
+        </p>
+      </div>
+
+      <div class="roadmap-container" id="roadmap-stages-list">
+        <!-- Dynamically rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- SECTION 2: CURATED RESOURCE MATRIX -->
+    <section class="container" id="resources" style="padding-top: 4.5rem; padding-bottom: 4.5rem;">
+      <div class="section-header">
+        <span class="section-tag">[ KNOWLEDGE REPOSITORY ]</span>
+        <h2 class="section-heading">CURATED RESOURCE MATRIX</h2>
+        <p class="section-desc">
+          Every video, university lecture series, textbook, code repo, and paper has been vetted for academic rigor and practical industry application. Search or filter by track.
+        </p>
+      </div>
+
+      <!-- FILTER & SEARCH TOOLBAR -->
+      <div class="filter-toolbar">
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input 
+            type="text" 
+            id="resource-search-input" 
+            class="search-input" 
+            placeholder="Search by topic, algorithm, author, or keyword (e.g. SVD, Karpathy, RAG, PyTorch)..."
+            aria-label="Search resources"
+          >
+          <span class="search-kbd-hint">Press /</span>
+        </div>
+
+        <!-- Format Category Chips -->
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+          <span class="mono-font" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Format Filter:</span>
+          <div class="filter-pills-row">
+            <button class="filter-chip active" data-category="all">All Formats</button>
+            <button class="filter-chip" data-category="video">📺 YouTube Masterclasses</button>
+            <button class="filter-chip" data-category="course">🎓 University Courses</button>
+            <button class="filter-chip" data-category="book">📚 Free Textbooks</button>
+            <button class="filter-chip" data-category="guide">📄 Practitioner Guides</button>
+            <button class="filter-chip" data-category="paper">📑 Research Papers</button>
+            <button class="filter-chip" data-category="repo">💻 Code Repos</button>
+          </div>
+        </div>
+
+        <!-- Track Selector Chips -->
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+          <span class="mono-font" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Topic Track:</span>
+          <div class="filter-pills-row">
+            <button class="filter-chip track-pill active" data-track="all">All Topics</button>
+            <button class="filter-chip track-pill" data-track="math">📐 Mathematics</button>
+            <button class="filter-chip track-pill" data-track="python">🐍 Python & Data</button>
+            <button class="filter-chip track-pill" data-track="classical-ml">🌲 Classical ML</button>
+            <button class="filter-chip track-pill" data-track="deep-learning">🧠 Deep Learning</button>
+            <button class="filter-chip track-pill" data-track="nlp-transformers">⚡ Transformers & NLP</button>
+            <button class="filter-chip track-pill" data-track="genai-llm">🔮 GenAI & LLMs</button>
+            <button class="filter-chip track-pill" data-track="agentic-ai">🤖 Agentic AI</button>
+            <button class="filter-chip track-pill" data-track="mlops">🚀 MLOps & SecOps</button>
+            <button class="filter-chip track-pill" data-track="faang-interview">💼 FAANG Interview</button>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 0.5rem; border-top: 1px dashed var(--border-color);">
+          <span class="mono-font" id="resource-count" style="font-size: 0.85rem; font-weight: 700; color: var(--arcade-amber);">Loading resources...</span>
+          <span class="mono-font" style="font-size: 0.75rem; color: var(--text-muted);">⭐ Gold Pick = Staff Recommended</span>
+        </div>
+      </div>
+
+      <!-- CARDS GRID -->
+      <div class="resources-grid" id="resources-cards-grid">
+        <!-- Dynamically rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- SECTION 3: VIDEO VAULT (YOUTUBE GOLD) -->
+    <section class="container" id="video-vault" style="padding-top: 4.5rem; padding-bottom: 4.5rem;">
+      <div class="section-header">
+        <span class="section-tag">[ HIGH-YIELD VIDEO VAULT ]</span>
+        <h2 class="section-heading">FEATURED YOUTUBE LECTURES & PLAYLISTS</h2>
+        <p class="section-desc">
+          Curated directly from Stanford, MIT, Andrej Karpathy, 3Blue1Brown, StatQuest, Yannic Kilcher, and Umar Jamil. Zero fluff—only high-signal educational gems.
+        </p>
+      </div>
+
+      <div class="video-grid" id="video-vault-grid">
+        <!-- Dynamically rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- SECTION 4: THE CANONICAL FREE BOOKSHELF -->
+    <section class="container" id="bookshelf" style="padding-top: 4.5rem; padding-bottom: 4.5rem;">
+      <div class="section-header">
+        <span class="section-tag">[ CANONICAL LITERATURE ]</span>
+        <h2 class="section-heading">THE FREE AI/ML BOOKSHELF</h2>
+        <p class="section-desc">
+          Legally free, author-hosted digital copies of the foundational textbooks that define artificial intelligence and mathematical optimization.
+        </p>
+      </div>
+
+      <div class="books-grid" id="bookshelf-grid">
+        <!-- Dynamically rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- SECTION 5: FAANG APPLIED SCIENTIST & MLE BLUEPRINT -->
+    <section class="container" id="faang-playbook" style="padding-top: 4.5rem; padding-bottom: 4.5rem;">
+      <div class="section-header">
+        <span class="section-tag">[ FAANG CAREER ENGINE ]</span>
+        <h2 class="section-heading">APPLIED SCIENTIST & MLE PLAYBOOK</h2>
+        <p class="section-desc">
+          Directly distilled from engineering leaders at Meta/Google and off-campus FAANG Applied Scientists. Master the 4 AI roles, the 7-step ML system design framework, and whiteboard math derivations.
+        </p>
+      </div>
+
+      <div class="playbook-grid">
+        <!-- 7-Step ML System Design Framework -->
+        <div class="playbook-card">
+          <h3 class="playbook-title">
+            <span>⚙️</span> 7-Step ML System Design Blueprint
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">
+            The conversational structure required to excel in senior ML interview loops at Google, Meta, and Netflix:
+          </p>
+          <ul class="playbook-steps-list" id="system-design-steps">
+            <!-- Dynamically rendered by app.js -->
+          </ul>
+        </div>
+
+        <!-- Whiteboard Math Drills & Top Conferences -->
+        <div style="display: flex; flex-direction: column; gap: 1.75rem;">
+          <div class="playbook-card">
+            <h3 class="playbook-title">
+              <span>📐</span> Whiteboard Math Drills (First Principles)
+            </h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              Common interview scenarios: "Write the mathematical formulation and derive gradients":
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.85rem;" id="whiteboard-drills-list">
+              <!-- Dynamically rendered by app.js -->
+            </div>
+          </div>
+
+          <div class="playbook-card">
+            <h3 class="playbook-title">
+              <span>🏛️</span> Conference vs Journal: Publication Strategy
+            </h3>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+              <p>In Computer Science, <strong>Flagship Conferences (NeurIPS, ICML, ICLR, CVPR)</strong> are the primary currency and tenure yardstick, unlike journal-centric biology or medicine.</p>
+              <div style="margin-top: 0.75rem; background: var(--bg-canvas); padding: 0.75rem; border: 1.5px solid var(--border-color); border-radius: 4px;">
+                <p><strong>CORE A* Venues:</strong> NeurIPS, ICML, ICLR, CVPR, ICCV, ACL</p>
+                <p style="margin-top: 0.25rem;"><strong>Fast Rolling Review:</strong> TMLR (Transactions on ML Research - 4-6 week turnaround)</p>
+                <p style="margin-top: 0.25rem;"><strong>Tools:</strong> Track h5-index on Google Scholar & csrankings.org</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Career Tracks Comparison Grid -->
+      <div style="margin-top: 3rem;">
+        <h3 class="pixel-font" style="font-size: 1.1rem; margin-bottom: 1.5rem; text-align: center;">THE 4 AI CAREER ARCHETYPES</h3>
+        <div class="stage-modules-grid" id="career-tracks-grid">
+          <!-- Dynamically rendered by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: PORTFOLIO PROJECT QUEST VAULT -->
+    <section class="container" id="projects" style="padding-top: 4.5rem; padding-bottom: 4.5rem;">
+      <div class="section-header">
+        <span class="section-tag">[ PORTFOLIO QUEST VAULT ]</span>
+        <h2 class="section-heading">ML & AI PORTFOLIO PROJECT BLUEPRINTS</h2>
+        <p class="section-desc">
+          Tiered portfolio projects designed to prove genuine engineering competency on your resume and GitHub. From tabular baselines to training 1B foundation models and building autonomous SWE agents.
+        </p>
+      </div>
+
+      <!-- Project Tier Filter Pills -->
+      <div class="projects-filter-pills">
+        <button class="filter-chip project-tier-btn active" data-tier="all">All Tiers (14)</button>
+        <button class="filter-chip project-tier-btn" data-tier="Beginner">🌱 Tier 1: Beginner</button>
+        <button class="filter-chip project-tier-btn" data-tier="Intermediate">⚡ Tier 2: Intermediate</button>
+        <button class="filter-chip project-tier-btn" data-tier="Advanced">🔥 Tier 3: Advanced</button>
+        <button class="filter-chip project-tier-btn neo-badge-god" data-tier="God Level" style="color: #fff;">⚡ Tier 4: God Level</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-cards-grid">
+        <!-- Dynamically rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- SECTION 7: FIRST PRINCIPLES FORMULA SHEET & TOOL ARSENAL -->
+    <section class="container" id="cheatsheets" style="padding-top: 4.5rem; padding-bottom: 4.5rem;">
+      <div class="section-header">
+        <span class="section-tag">[ FIRST-PRINCIPLES CHEATSHEET ]</span>
+        <h2 class="section-heading">MATHEMATICAL FORMULAS & TOOL ARSENAL</h2>
+        <p class="section-desc">
+          Essential equations (Attention, RoPE, Adam, Loss functions) frequently tested in research interviews, alongside the 2026 industry AI stack.
+        </p>
+      </div>
+
+      <div id="formulas-grid">
+        <!-- Dynamically rendered by app.js -->
+      </div>
+
+      <div style="margin-top: 3.5rem;">
+        <h3 class="pixel-font" style="font-size: 1.1rem; margin-bottom: 1.5rem; text-align: center;">THE MODERN ML & AI TOOL ARSENAL</h3>
+        <div class="tools-grid" id="tools-arsenal-grid">
+          <!-- Dynamically rendered by app.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ARCADE FOOTER -->
+  <footer class="arcade-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col" style="max-width: 380px;">
+          <div style="display: flex; align-items: center; gap: 0.6rem;">
+            <div class="brand-icon" style="width: 32px; height: 32px; font-size: 0.85rem;">⚡</div>
+            <span class="pixel-font" style="font-size: 0.9rem;">TENSORARCADE</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem;">
+            An open-access Machine Learning curriculum and engineering command center designed for ambitious learners, engineers, and researchers striving to build the frontier of AI.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">CURRICULUM</h4>
+          <ul class="footer-links">
+            <li><a href="#roadmap" class="footer-link">01: Mathematics Engine</a></li>
+            <li><a href="#roadmap" class="footer-link">04: Deep Learning & PyTorch</a></li>
+            <li><a href="#roadmap" class="footer-link">05: Transformers & NLP</a></li>
+            <li><a href="#roadmap" class="footer-link">07: GenAI & LLM Systems</a></li>
+            <li><a href="#roadmap" class="footer-link">08: Agentic AI & MCP</a></li>
+            <li><a href="#roadmap" class="footer-link">09: Production MLOps</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">RESOURCES</h4>
+          <ul class="footer-links">
+            <li><a href="#projects" class="footer-link">Project Quests (All Tiers)</a></li>
+            <li><a href="#video-vault" class="footer-link">YouTube Video Vault</a></li>
+            <li><a href="#bookshelf" class="footer-link">Free Canonical Bookshelf</a></li>
+            <li><a href="#cheatsheets" class="footer-link">Formula Sheet & Stack</a></li>
+            <li><a href="#faang-playbook" class="footer-link">FAANG MLE Playbook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">EXTERNAL BENCHMARKS</h4>
+          <ul class="footer-links">
+            <li><a href="https://roadmap.sh/machine-learning" target="_blank" rel="noopener" class="footer-link">roadmap.sh/ml ↗</a></li>
+            <li><a href="https://github.com/aadi1011/AI-ML-Roadmap-from-scratch" target="_blank" rel="noopener" class="footer-link">Aadi1011 GitHub ↗</a></li>
+            <li><a href="https://modelcontextprotocol.io" target="_blank" rel="noopener" class="footer-link">Model Context Protocol ↗</a></li>
+            <li><a href="https://csrankings.org" target="_blank" rel="noopener" class="footer-link">CSRankings.org ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 TENSORARCADE • 100% Free Open Educational Resource. Built with Neo-Brutalist Arcade Aesthetics.</div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="#" class="footer-link">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DETAIL MODAL / DRAWER (MODERN CSS ANIMATION & A11Y) -->
+  <div id="arcade-detail-modal" class="arcade-modal hidden" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title-text">
+    <div class="arcade-modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title-text">RESOURCE DEEP DIVE</h3>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body" id="modal-dynamic-content">
+        <!-- Dynamically populated by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/data/roadmap-nodes.js"></script>
+  <script src="js/data/resources.js"></script>
+  <script src="js/data/interview-prep.js"></script>
+  <script src="js/data/projects.js"></script>
+  <script src="js/data/cheatsheets.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
